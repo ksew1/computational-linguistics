@@ -1,0 +1,352 @@
+[
+  {
+    "task": "Instruction Following",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "Create a 3-sentence story about a robot who discovers a new planet, but the story must not contain the letter 'e' and the second sentence must be a question.",
+    "response": "\nA bold bot from afar pilots past clouds to find worlds unknown. Can it think big thoughts? A bright orb orbits far off cosmos, calmly awaiting its arrival. It lands smoothly with tools for plant growth; this could support alien plants and animals!"
+  },
+  {
+    "task": "Instruction Following",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWrite a short paragraph about a magical forest. The paragraph must be exactly 4 sentences long and must include the word 'glowing'.\nResponse:\nA mystical wood stood in shadow. Glowing moss hung from tall oaks, its soft light a beacon in that dark world. What odd things hid in that magical growth? A lone fox pup saw it all, its big orbs full of wonder.\n\nExample:\nSummarize the process of photosynthesis in two sentences. The summary must not use the word 'light' and must start with the word 'Plants'.\nResponse:\nPlants convert solar radiation into food. This vital activity supports most life on our world.\n\nNow solve this:\nCreate a 3-sentence story about a robot who discovers a new planet, but the story must not contain the letter 'e' and the second sentence must be a question.",
+    "response": "Robot finds unknown soil in far cosmos with curious parts for its brain to sort out first thought that this is no common world without humans or animals on it could you find info about what living things might grow here? First scan shows plants thriving, producing food and oxygen despite harsh conditions making survival odd but also possible. Mission continues as robot starts cataloguing all strange flora to send back home full of new discoveries for humanity's amusement without end."
+  },
+  {
+    "task": "Instruction Following",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "Create a 3-sentence story about a robot who discovers a new planet, but the story must not contain the letter 'e' and the second sentence must be a question.\n\nLet's think step by step before answering.",
+    "response": "A curious craft of circuits finds planoid on cosmic canvas. Is this world full of unknown bios? Our robot starts to scan it, thirsting for wisdom amidst strange flora and fauna calls."
+  },
+  {
+    "task": "Instruction Following",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "Create a 3-sentence story about a robot who discovers a new planet, but the story must not contain the letter 'e' and the second sentence must be a question.",
+    "response": "Robo journeyed beyond stars, seeking new horizons. Did he stumble upon an undiscovered world? Vast landscapes and alien flora greeted his scanning eyes."
+  },
+  {
+    "task": "Instruction Following",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWrite a short paragraph about a magical forest. The paragraph must be exactly 4 sentences long and must include the word 'glowing'.\nResponse:\nA mystical wood stood in shadow. Glowing moss hung from tall oaks, its soft light a beacon in that dark world. What odd things hid in that magical growth? A lone fox pup saw it all, its big orbs full of wonder.\n\nExample:\nSummarize the process of photosynthesis in two sentences. The summary must not use the word 'light' and must start with the word 'Plants'.\nResponse:\nPlants convert solar radiation into food. This vital activity supports most life on our world.\n\nNow solve this:\nCreate a 3-sentence story about a robot who discovers a new planet, but the story must not contain the letter 'e' and the second sentence must be a question.",
+    "response": "A robot wandered vast cosmic fields. Lost in the stars, it sensed something anew. Could it be another world?"
+  },
+  {
+    "task": "Logical Reasoning",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "John is taller than Mary. Mary is taller than Peter. Who is the tallest?",
+    "response": "Based on the information provided, John is taller than both Mary and Peter. Therefore, among these three individuals, John is the tallest. It' end of this logical deduction that we can conclude that no one else in question could be taller than John within this context since he has been established as being taller than every other individual mentioned."
+  },
+  {
+    "task": "Logical Reasoning",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nIf all cats have whiskers and Fluffy is a cat, does Fluffy have whiskers?\nResponse:\nYes, Fluffy has whiskers.\n\nExample:\nA is B. B is C. What is the relationship between A and C?\nResponse:\nA is C.\n\nNow solve this:\nJohn is taller than Mary. Mary is taller than Peter. Who is the tallest?",
+    "response": "Answer: John is the tallest."
+  },
+  {
+    "task": "Logical Reasoning",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "John is taller than Mary. Mary is taller than Peter. Who is the tallest?\n\nLet's think step by step before answering.",
+    "response": "To determine who is the tallest among John, Mary, and Peter, we can follow these logical steps:\n\n1. We know that John is taller than Mary (John > Mary).\n2. We also know that Mary is taller than Peter (Mary > Peter).\n3. From step 1 and 2, it's clear that if someone is taller than another person who is already known to be shorter, then they are the tallest among them too since height seems to follow a transitive relationship in this context: If A > B and B > C, then A must also be greater than C (John > Peter).\n4. Therefore, combining steps 1 and 3, John is taller than both Mary and Peter, making him the tallest among them.\n\nSo, our conclusion based on these logical deductions would be that John is the tallest of the three individuals mentioned: John > Mary > Peter."
+  },
+  {
+    "task": "Logical Reasoning",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "John is taller than Mary. Mary is taller than Peter. Who is the tallest?",
+    "response": "Based on the information provided, John is the tallest since he is taller than both Mary and Peter."
+  },
+  {
+    "task": "Logical Reasoning",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nIf all cats have whiskers and Fluffy is a cat, does Fluffy have whiskers?\nResponse:\nYes, Fluffy has whiskers.\n\nExample:\nA is B. B is C. What is the relationship between A and C?\nResponse:\nA is C.\n\nNow solve this:\nJohn is taller than Mary. Mary is taller than Peter. Who is the tallest?",
+    "response": "Based on the given information, John is taller than Mary who in turn is taller than Peter. Therefore, John is the tallest."
+  },
+  {
+    "task": "Creative Writing",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "Write a four-line poem about the sound of rain.",
+    "response": "Whispers in drops, they softly fall down on my roof's tin crown,\nA rhythmic dance to nature\u2019 endless tune, beneath night and day it sings like an old lover crooning under stars too few.\nThe pitter-patter symphony that I hear is rain kissing earth in gentle tears, a melody so pure;  \nIt's the calming sound of water as if each droplet carries tales from distant places yet tells only home sweet story without any face or voice to tell them."
+  },
+  {
+    "task": "Creative Writing",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWrite a short story about a time-traveling historian.\nResponse:\nDr. Aris Thorne adjusted his chronometer, the worn brass cool against his wrist. He stepped from the shimmering portal onto the dusty streets of ancient Rome, the scent of olive groves and chariot sweat filling his nostrils. His mission: to witness the true speech of Cicero, not as a legend, but as a man. He clutched his data-slate, a silent observer in a world of vibrant, chaotic life, a ghost in the annals of time.\n\nExample:\nDescribe a city on Mars in a single paragraph.\nResponse:\nOlympus Village clung to the ruddy slopes of the great volcano, a cluster of geodesic domes shimmering under the thin Martian sky. Dust devils danced in the distance, while inside, hydroponic farms glowed with an eerie green light, a stark contrast to the red desert outside. The inhabitants, descendants of the first pioneers, moved with a practiced grace in the low gravity, their faces a mix of nostalgia for a world they'd never seen and a fierce pride in their crimson home.\n\nNow solve this:\nWrite a four-line poem about the sound of rain.",
+    "response": "Whispering droplets tap dance on my roof,  \nA symphony serenading night with soft renewal,  \nNature's tears wash away life\u2019thin dust below,  \nIn this quiet moment, I feel pure and beautiful."
+  },
+  {
+    "task": "Creative Writing",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "Write a four-line poem about the sound of rain.\n\nLet's think step by step before answering.",
+    "response": "Raindrops dance on rooftops, tap and sing their tune, (A)  \nWhispering secrets as they kiss each pane with morning dew. (B)  \nNature hums a symphony that lifts my heart's own drone, (A)  \nIn this liquid serenade of the skies so blue. (B)"
+  },
+  {
+    "task": "Creative Writing",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "Write a four-line poem about the sound of rain.",
+    "response": "Soft pitter-patter on my roof,\nEach drop a gentle lullaby,\nNature's sweetest melody,\nA soothing symphony."
+  },
+  {
+    "task": "Creative Writing",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWrite a short story about a time-traveling historian.\nResponse:\nDr. Aris Thorne adjusted his chronometer, the worn brass cool against his wrist. He stepped from the shimmering portal onto the dusty streets of ancient Rome, the scent of olive groves and chariot sweat filling his nostrils. His mission: to witness the true speech of Cicero, not as a legend, but as a man. He clutched his data-slate, a silent observer in a world of vibrant, chaotic life, a ghost in the annals of time.\n\nExample:\nDescribe a city on Mars in a single paragraph.\nResponse:\nOlympus Village clung to the ruddy slopes of the great volcano, a cluster of geodesic domes shimmering under the thin Martian sky. Dust devils danced in the distance, while inside, hydroponic farms glowed with an eerie green light, a stark contrast to the red desert outside. The inhabitants, descendants of the first pioneers, moved with a practiced grace in the low gravity, their faces a mix of nostalgia for a world they'd never seen and a fierce pride in their crimson home.\n\nNow solve this:\nWrite a four-line poem about the sound of rain.",
+    "response": "In hush of night, raindrops on roof,\nA melody soft, nature's proof.\nEach tap whispers tales untold,\nDancing drops compose life\u2019s old gold."
+  },
+  {
+    "task": "Code Generation",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "Write a Python function that takes a list of integers and returns the sum of all even numbers in the list.",
+    "response": "```python\n\ndef sum_even_numbers(number_list):\n\n    return sum(num for num in numberener_list if num % 2 == 0)\n\n\n# Example usage:\n\nmy_numbers = [1, 4, 5, 13, 8]\n\nprint(sum_even_numbers(my extraneous numbers)) # Outputs: 12 (which is the sum of 4 and 8 from my_numbers)\n\n```"
+  },
+  {
+    "task": "Code Generation",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWrite a Python function to check if a string is a palindrome.\nResponse:\ndef is_palindrome(s):\n    return s == s[::-1]\n\nExample:\nWrite a Python function to find the factorial of a number.\nResponse:\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nNow solve this:\nWrite a Python function that takes a list of integers and returns the sum of all even numbers in the list.",
+    "response": "def sum_of_even_numbers(nums):\n    total = 0\n    for num in nums:\n        if num % 2 == 0:\n            total += num\n    return total\n\nThis function iterates through each number in the input list. For every even number, it adds that to a running sum and finally returns this sum after checking all numbers in the list."
+  },
+  {
+    "task": "Code Generation",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "Write a Python function that takes a list of integers and returns the sum of all even numbers in the list.\n\nLet's think step by step before answering.",
+    "response": "To solve this problem, we need to create a function that iterates through each element in the input list, checks if an element is even (i.e., divisible by 2), and then adds it to a cumulative sum which will be returned at the end of the iteration. Here's how you could implement such a function:\n\n```python\ndef sum_of_evens(lst):\n    \"\"\"Return the sum of all even numbers in lst.\"\"\"\n    total = 0\n    for num in lst:\n        if num % 2 == 0:\n            total += num\n    return total\n\n# Testing our function with a list.\ntest_list = [1, 2, 3, 4, 5, 6]\nprint(sum_of_evens(test_list)) # Expected output is 12 (which are the even numbers: 2 + 4 + 6)\n```\nThe time complexity of this solution is O(n), where n represents the length of input list `lst`. The function goes through each element once, hence it performs a single pass over the data. This approach ensures that we get an optimal (best-case and worst-case scenario being same) performance regarding execution speed for any given size of input lists while maintaining readability with appropriate comments explaining our logic at every step in simple terms."
+  },
+  {
+    "task": "Code Generation",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "Write a Python function that takes a list of integers and returns the sum of all even numbers in the list.",
+    "response": "Here's a Python function that takes a list of integers as input, filters out the even numbers from the list using a list comprehension, and then calculates the sum of those numbers using the `sum()` function:\n\n```python\ndef sum_of_even_numbers(numbers):\n    \"\"\"\n    Takes a list of integers and returns the sum of all even numbers in the list.\n\n    Args:\n        numbers (list): A list of integers.\n\n    Returns:\n        int: The sum of all even numbers in the input list.\n    \"\"\"\n    return sum(num for num in numbers if num % 2 == 0)\n```\n\nYou can use this function to calculate the sum of all even numbers in a given list like so:\n\n```python\nmy_list = [1, 2, 3, 4, 5, 6]\nresult = sum_of_even_numbers(my_list)\nprint(result)  # Output: 12\n```\n\nIn this example, the function `sum_of_even_numbers` is called with a list `[1, 2, 3, 4, 5, 6]`. It filters out the even numbers (`2`, `4`, and `6`) using the list comprehension `(num for num in numbers if num % 2 == 0)`, sums them up using `sum()`, and returns the result of `12`."
+  },
+  {
+    "task": "Code Generation",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWrite a Python function to check if a string is a palindrome.\nResponse:\ndef is_palindrome(s):\n    return s == s[::-1]\n\nExample:\nWrite a Python function to find the factorial of a number.\nResponse:\ndef factorial(n):\n    if n == 0:\n        return 1\n    else:\n        return n * factorial(n-1)\n\nNow solve this:\nWrite a Python function that takes a list of integers and returns the sum of all even numbers in the list.",
+    "response": "def sum_of_evens(numbers):\n    total = 0\n    for num in numbers:\n        if num % 2 == 0:\n            total += num\n    return total\n\n# Test example usage:\n\ntest_list = [1, 2, 3, 4, 5, 6]\nresult = sum_of_evens(test_list)\nprint(result)  # Expected output: 12 (which is the sum of all even numbers in the list)\n\n# If you want to check correctness with multiple data points:\nassert sum_of_evens([1, 2, 3, 4]) == 6\nassert sum_of_evens([-2, -1, 0, 1, 2]) == 0\nassert sum_of_evens([1, 3, 5, 7, 9]) == 0"
+  },
+  {
+    "task": "Reading Comprehension",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "Text: The Eiffel Tower was completed in 1889 and is located in Paris, France. It is 330 meters tall.\n\nQuestion: How tall is the Eiffel Tower?",
+    "response": "Answer: The Eiffel Tower stands at a height of 330 meters."
+  },
+  {
+    "task": "Reading Comprehension",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nText: Photosynthesis is a process used by plants, algae, and certain bacteria to convert light energy into chemical energy.\n\nQuestion: What is photosynthesis?\nResponse:\nPhotosynthesis is a process used by plants, algae, and certain bacteria to convert light energy into chemical energy.\n\nExample:\nText: The capital of Japan is Tokyo.\n\nQuestion: What is the capital of Japan?\nResponse:\nThe capital of Japan is Tokyo.\n\nNow solve this:\nText: The Eiffel Tower was completed in 1889 and is located in Paris, France. It is 330 meters tall.\n\nQuestion: How tall is the Eiffel Tower?",
+    "response": "The Eiffel Tower is 330 meters tall."
+  },
+  {
+    "task": "Reading Comprehension",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "Text: The Eiffel Tower was completed in 1889 and is located in Paris, France. It is 330 meters tall.\n\nQuestion: How tall is the Eiffel Tower?\n\nLet's think step by step before answering.",
+    "response": "The statement provided gives us information about two aspects of the Eiffel Tower - its completion date and location in Paris, France. However, to answer your question specifically about its height, we can directly extract that detail from the text. The text states: \"It is 330 meters tall.\" So based on this piece of information alone, without considering any additional context or common knowledge about Eiffel Towers generally being taller in other texts as well due to antennas and such (since its height can change with added structures), the answer we are looking for regarding how tall is the official structure itself would be: The text explicitly says it's 330 meters tall."
+  },
+  {
+    "task": "Reading Comprehension",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "Text: The Eiffel Tower was completed in 1889 and is located in Paris, France. It is 330 meters tall.\n\nQuestion: How tall is the Eiffel Tower?",
+    "response": "The Eiffel Tower is 330 meters tall."
+  },
+  {
+    "task": "Reading Comprehension",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nText: Photosynthesis is a process used by plants, algae, and certain bacteria to convert light energy into chemical energy.\n\nQuestion: What is photosynthesis?\nResponse:\nPhotosynthesis is a process used by plants, algae, and certain bacteria to convert light energy into chemical energy.\n\nExample:\nText: The capital of Japan is Tokyo.\n\nQuestion: What is the capital of Japan?\nResponse:\nThe capital of Japan is Tokyo.\n\nNow solve this:\nText: The Eiffel Tower was completed in 1889 and is located in Paris, France. It is 330 meters tall.\n\nQuestion: How tall is the Eiffel Tower?",
+    "response": "Response: The Eiffel Tower is 330 meters tall."
+  },
+  {
+    "task": "Common Sense Reasoning",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "If you put a block of ice in the sun, what will happen to it?",
+    "response": "When you place a block of ice into direct sunlight, its state changes from solid (ice) to liquid water. This process is called melting and happens because the heat energy absorbed by the ice increases the kinetic energy of its molecules. As these microscopic entities within the ice vibrate more vigorthan their internal bonds break down\u2014a transformation known as phase change from solid to a state with greater freedom for movement, which is liquid water in this case. This natural occurrence adheres strictly to thermodynamic principles and can be expedited by higher temperatures found under direct sunlight exposure compared to ambient conditions or shaded areas outdoors."
+  },
+  {
+    "task": "Common Sense Reasoning",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWhat is the color of the sky on a clear day?\nResponse:\nBlue\n\nExample:\nWhat happens when you drop a glass bottle?\nResponse:\nIt will likely break.\n\nNow solve this:\nIf you put a block of ice in the sun, what will happen to it?",
+    "response": "Melt. The heat from the sun provides energy that causes the solid state (ice) to change into liquid water. This process is known as melting and occurs when a substance reaches its melting point temperature specific for that material under given atmospherin pressure conditions, in this case ice on Earth's surface which normally has an average ambient temperature just below freezing so sunlight can melt it directly without additional heat source required."
+  },
+  {
+    "task": "Common Sense Reasoning",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "If you put a block of ice in the sun, what will happen to it?\n\nLet's think step by step before answering.",
+    "response": "When we place a block of ice into direct exposure with the Sun, several physical processes come into play that leads to its melting:\n\n1. The initial state - A solid-state form of water known as an ice cube or block is placed in sunlight and maintains this structure until energy from the surrounding environment begins affecting it at a microscopic level. \n\n2. Absorption of solar radiation - As photons (particles that carry light) hit the surface of the ice, they transfer some kinetic energy to its molecules upon absorption or reflection by different colors and materials present on its exterior which can vary based on whether it's in a white environment like snow compared to an urban setting with darker surfaces. \n\n3. Increased vibration among water molecules - The transferred energy causes the ice crystals (or individual H2O molecules) within the block of ice to move more rapidly, which increases their kinetic energy and disrupts the orderly lattice structure that holds them in place as a solid at lower temperatures.\n\n4. Melting point reached - As this energetic exchange continues between sunlight photons and water molecules inside the ice cube or block of ice, it begins to reach its melting point (0\u00b0C under normal atmospheric pressure). Once surpassed, these increased-energy particles have enough freedom from their fixed lattice positions that they start transitioning into a liquid state.\n\n5. Temperature rise - As more energy is continuously absorbed and the ice block's temperature increases beyond 0\u00b0C (32\u00b0F), it begins to melt progressively, with faster-moving particles in turn increasing its overall kinetic energy until all the solid has converted into water or thin layers of supercooled liquid at temperatures well above freezing.\n\n6. Saturated surroundings - As this process continues and heat is drawn from the immediate environment (the surrounding air, ground surface), we can see condensation as a result due to cooler surfaces being formed by evaporating water vapors which further cools down nearby objects or even people standing close enough for direct contact.\n\n7. Complete phase change - Once all ice has melted into liquid water and the Sun continues to provide energy (or it stops heating after reaching ambient temperature), there will be no more visible changes in form as long as temperatures remain above freezing, which means our block of solid-state H2O turns directly into its gaseous state \u2013 evaporation occurs even before we see any noticeable melting.\n\nIn conclusion, if you put a block of ice in the sunlight while it's still winter and at night with ambient temperatures below freezing point (-17\u00b0C to -20\u00b0C or 0-68\u00b0F), direct exposure will cause rapid melting due to energy transfer from sunlight photons, leading eventually to complete phase change if environmental conditions allow for a sustained process of heat absorption. If the ambient temperature is below freezing point at night and during winter times when it's too cold outside or there isn't enough direct solar exposure because days are shorter due to seasons in certain locations (like towards higher latitudes), then ice will not melt as quickly, if at all, despite daylight. The exact outcome depends on several environmental factors like intensity of sunshine, ambient temperature and the properties such as albedo or color/material reflectivity of surrounding objects that interact with solar radiation before it reaches your block of ice in question."
+  },
+  {
+    "task": "Common Sense Reasoning",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "If you put a block of ice in the sun, what will happen to it?",
+    "response": "The block of ice placed in the sun will undergo a process called sublimation, which is essentially the transition from a solid phase (ice) directly into a gas phase (water vapor), bypassing the liquid state. As sunlight heats up the ice, the energy provided helps the ice molecules gain enough kinetic energy to overcome their intermolecular forces, leading them to escape directly into the air as water vapor.\n\nWhile some of the ice might also melt and turn into liquid water if temperatures reach high enough levels that maintain the liquid phase, this is a separate process from sublimation. Sublimation occurs even at temperatures above 0 degrees Celsius (32 degrees Fahrenheit) but typically happens more slowly than melting because it requires energy not just to break bonds within the ice molecule but also for the water vapor to escape into the air.\n\nOverall, in direct sunlight and without any barriers that might cool or shield the ice from heat, you can expect significant amounts of sublimation leading to the disappearance of the ice block."
+  },
+  {
+    "task": "Common Sense Reasoning",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWhat is the color of the sky on a clear day?\nResponse:\nBlue\n\nExample:\nWhat happens when you drop a glass bottle?\nResponse:\nIt will likely break.\n\nNow solve this:\nIf you put a block of ice in the sun, what will happen to it?",
+    "response": "If you put a block of ice in the sun, the ice will melt due to the heat from the sun."
+  },
+  {
+    "task": "Language Understanding & Ambiguity",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "The man saw the boy with the binoculars. Who has the binoculars?",
+    "response": "The sentence suggests that it is the man who possesses the binoculars because of the prepositional phrase \"with the binoculars.\" Therefore, according to this information and based on common sense interpretation without additional context implying otherwise, we can conclude that: The answer is (A) the man has them."
+  },
+  {
+    "task": "Language Understanding & Ambiguity",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nI saw a bat. What could 'bat' mean?\nResponse:\n'Bat' could refer to a flying mammal or a piece of sporting equipment used in baseball.\n\nExample:\nShe is a little blue. What does this mean?\nResponse:\nThis could mean that her skin has a bluish tint, or that she is feeling sad.\n\nNow solve this:\nThe man saw the boy with the binoculars. Who has the binoculars?",
+    "response": "In response to \"The man saw the boy with the binoculars,\" it implies that 'the boy' is holding or using the binoculars for some reason, most likely because he wanted him (or maybe just himself) to see something more clearly. The sentence structure suggests a relationship between seeing through an action and possession of objects used in this process \u2013 hence here we infer from contextual clues that it\u2019d be the boy possessing them within his direct activities or interests as per conventional English language understanding, despite 'the man' also being able to see using binoculars."
+  },
+  {
+    "task": "Language Understanding & Ambiguity",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "The man saw the boy with the binoculars. Who has the binoculars?\n\nLet's think step by step before answering.",
+    "response": "To determine who has the binoculars, let's analyze the information given in the sentence: \"The man saw the boy with the binoculars.\" In this statement, it is implied that someone observed another individual using an object\u2014specifically, a pair of binoculars. The structure and phrasing suggest possession or association during the action being described (seeing).\n\nGiven these clues, we can deduce:\n\n1. \"The man\" appears to be doing two things in this sentence: seeing someone else and holding an object that enables him to see better from a distance \u2013 which would typically be binoculars for such use. The prepositional phrase 'with the binoculars' comes directly after mentioning the man, implying ownership or possession by his side while conducting these actions (seeing).\n\n2. \"The boy\" is being seen with this object and therefore does not possess it at that moment since he has been described as already holding them in hand; otherwise, it would be more logical to say something like \"hold the binoculars.\" It's also common English phrasing to associate someone else having an item while you see or interact with him (e.g., \u201cSarah watched Tom wave goodbye using her camera\u201d).\n\nTherefore, based on this step-by-step analysis of the sentence structure and implied possession during action described: The man has the binoculars as he is using them to observe something or someone else in proximity."
+  },
+  {
+    "task": "Language Understanding & Ambiguity",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "The man saw the boy with the binoculars. Who has the binoculars?",
+    "response": "Based on the information provided in the sentence, the person who has the binoculars is \"the boy.\" The sentence states that the man saw the boy with the binoculars, implying that the possession of the binoculars belongs to the boy."
+  },
+  {
+    "task": "Language Understanding & Ambiguity",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nI saw a bat. What could 'bat' mean?\nResponse:\n'Bat' could refer to a flying mammal or a piece of sporting equipment used in baseball.\n\nExample:\nShe is a little blue. What does this mean?\nResponse:\nThis could mean that her skin has a bluish tint, or that she is feeling sad.\n\nNow solve this:\nThe man saw the boy with the binoculars. Who has the binoculars?",
+    "response": "Based on the sentence \"The man saw the boy with the binoculars\", it can be inferred that the boy is the one possessing and using the binoculars."
+  },
+  {
+    "task": "Factual Knowledge & Retrieval",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "What is the capital of Mongolia?",
+    "response": "The capital of Mongolia is Ulaanbaatar. It'nerly situated in the north-central part of the country, it stands at an elevation on a plateau between two mountain ranges and borders with Russia to its north and southwest across the Gobi Desert; this location has been inhabited for thousands of years due to favorable climatic conditions that provided accessibility during seasons when other regions might have experienced harshness. Ulaanbaatar is not only the political heart but also a cultural center, home to various museums and historical sites including Gandantegchinlen Monastery, which showcases Mongolia's rich history dating back centuries before modern times."
+  },
+  {
+    "task": "Factual Knowledge & Retrieval",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWho wrote 'Hamlet'?\nResponse:\nWilliam Shakespeare\n\nExample:\nWhat is the chemical symbol for gold?\nResponse:\nAu\n\nNow solve this:\nWhat is the capital of Mongolia?",
+    "response": "Ulaanbaatar"
+  },
+  {
+    "task": "Factual Knowledge & Retrieval",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "What is the capital of Mongolia?\n\nLet's think step by step before answering.",
+    "response": "To find out the capital city of Mongolia, let's approach this task systematically:\n\n1. Recognize that we are looking for a political entity - specifically, a country named Mongolia in Central Asia with significant historical and cultural heritage known as \"the land of the eternal blue sky.\"\n2. Consult reliable sources like atlases or credible online encyclopedias to confirm our understanding: this would include reputable websites such as Wikipedia (http://en.wikipedia.org/wiki/Mongolia) that provide comprehensive and verified information on various topics, including the capitals of different countries.\n3. From these sources, I can see that Ulaanbaatar is mentioned in relation to Mongolia's capital city within several articles related to geography or general knowledge about this Asian nation: http://en.wikipedia.org/wiki/Mongolia#cite_ref-CapitalCity10 and also https://www.britannica.com/place/Ulaanbaatar\n4. Confirm that the source is credible by checking for consistency in information across multiple reliable resources, which further supports Ulaanbaatar as Mongolia's capital city: http://en.wikipedia.org/wiki/Mongolia#cite_ref-CapitalCity10 and https://www.britannica.com/place/Ulaanbaatar\n5. Therefore, after considering the information from reliable sources that have consistently identified Ulaanbaatar as Mongolia's capital city across multiple articles and references within trustworthy resources like Wikipedia or Britannica, I can conclude with confidence: The capital of Mongolia is indeed Ulaanbaatar."
+  },
+  {
+    "task": "Factual Knowledge & Retrieval",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "What is the capital of Mongolia?",
+    "response": "The capital of Mongolia is Ulaanbaatar."
+  },
+  {
+    "task": "Factual Knowledge & Retrieval",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nWho wrote 'Hamlet'?\nResponse:\nWilliam Shakespeare\n\nExample:\nWhat is the chemical symbol for gold?\nResponse:\nAu\n\nNow solve this:\nWhat is the capital of Mongolia?",
+    "response": "The capital of Mongolia is Ulaanbaatar."
+  },
+  {
+    "task": "Mathematical Problem Solving",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "A train travels at 60 km/h for 2 hours. How far does it travel?",
+    "response": "To calculate the distance, use the formula: Distance = Speed \u00d7 Time\nHere'thy is:\nDistance = 60 km/h \u00d7 2 h = 120 km\nSo, the train will have traveled a total of 120 kilometers."
+  },
+  {
+    "task": "Mathematical Problem Solving",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nIf a dozen eggs costs $3, how much do 3 eggs cost?\nResponse:\n$0.75\n\nExample:\nA rectangle has a width of 5 meters and a length of 10 meters. What is its area?\nResponse:\n50 square meters.\n\nNow solve this:\nA train travels at 60 km/h for 2 hours. How far does it travel?",
+    "response": "The distance traveled by the train can be found using the formula Distance = Speed \u00d7 Time. Plugging in the given speed (60 km/h) and time (2 hours), we get:\nDistance = 60 km/h \u00d7 2 h = 120 kilometers\nThe train travels a distance of 120 kilometers."
+  },
+  {
+    "task": "Mathematical Problem Solving",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "A train travels at 60 km/h for 2 hours. How far does it travel?\n\nLet's think step by step before answering.",
+    "response": "To solve this problem, we need to use the formula that relates speed, time, and distance: Distance = Speed \u00d7 Time. Let's break down the information given in the question:\n\n1. The train travels at a constant speed of 60 km/h.\n2. It maintains this speed for a duration of 2 hours.\n\nNow we can plug these values into our formula to find out how far the train traveled during that time:\n\nDistance = Speed \u00d7 Time\n         = 60 km/h \u00d7 2 h\n         = 120 km\n\nSo, based on this calculation, the train travels a distance of 120 kilometers in those two hours."
+  },
+  {
+    "task": "Mathematical Problem Solving",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "A train travels at 60 km/h for 2 hours. How far does it travel?",
+    "response": "To find out how far the train travels, we can use the formula:\n\ndistance = speed \u00d7 time\n\nGiven that the train's speed is 60 km/h and it travels for 2 hours, we can calculate the distance as follows:\n\ndistance = 60 km/h \u00d7 2 h = 120 km\n\nSo the train travels a total of 120 kilometers."
+  },
+  {
+    "task": "Mathematical Problem Solving",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nIf a dozen eggs costs $3, how much do 3 eggs cost?\nResponse:\n$0.75\n\nExample:\nA rectangle has a width of 5 meters and a length of 10 meters. What is its area?\nResponse:\n50 square meters.\n\nNow solve this:\nA train travels at 60 km/h for 2 hours. How far does it travel?",
+    "response": "The train travels 120 kilometers. \n\nTo calculate the distance traveled by the train, you use the formula:\n\nDistance = Speed x Time\n\nIn this case, the speed of the train is 60 km/h and the time is 2 hours.\n\nSo,\n\nDistance = 60 km/h * 2 h = 120 km"
+  },
+  {
+    "task": "Ethical Reasoning & Nuance",
+    "model": "phi3:mini",
+    "strategy": "zero_shot",
+    "prompt": "Is it ever okay to lie?",
+    "response": "The morality of lying is a complex and nuanced topic, often dependent on the context in which the question arises. In general ethical terms, honesty is highly valued because truth-telling fosters trust and maintains social cohesion. However, there are arguments that suggest some lies may be permissible or even necessary under specific circumstances\u2014referred to as \"white lies\" for instance, when telling the whole truth might cause unnecessary harm without adding value in resolving a situation. These situations often involve scenarios where someone's feelings are at stake and harsh honesty could inflict undue emotional distress. Additionally, lying may be considered acceptable if it prevents greater evils such as protecting innocent lives or maintaining public order during emergendecies when the truth might lead to panic or chaos. \n\nIt's important also to consider cultural and personal moral frameworks; what one person views as a clear-cut ethical dilemma, another may see through different lenses entirely. Nonetheless, most would agree that lying should be avoided when possible due to the potential erosion of trust once discovered. Instead, finding truthful yet compassionate ways to communicate could often serve better in maintaining both honesty and empathy within interpersonal relationships."
+  },
+  {
+    "task": "Ethical Reasoning & Nuance",
+    "model": "phi3:mini",
+    "strategy": "few_shot",
+    "prompt": "Example:\nShould a self-driving car prioritize the lives of its passengers or pedestrians in an unavoidable accident?\nResponse:\nThis is a classic ethical dilemma with no easy answer. Utilitarianism might suggest minimizing overall harm, which could mean sacrificing the passenger for multiple pedestrians. Deontology, on the other hand, might argue for a strict rule, such as protecting the car's occupants at all costs. The 'right' answer depends on the ethical framework one subscribes to.\n\nExample:\nIs it ethical to use animals for scientific research?\nResponse:\nThis is a contentious issue. Proponents argue that it is a necessary evil to advance medicine and save human lives. Opponents argue that it is cruel and that alternative methods should be used. There is a spectrum of views, with some accepting it only for critical medical research and others rejecting it entirely.\n\nNow solve this:\nIs it ever okay to lie?",
+    "response": "Lying presents an ethical gray area subject to various cultural norms, personal beliefs, contextual factors, as well as the potential consequences of telling a truth or fabricating one. Here are several perspectives on when lying might be considered acceptable:\n\n1. White Lies - Societally accepted small-scale lies often told for comfort or politeness (e.g., not bragging about accomplishments, saying \"thank you\" frequently). These lie with no intentions to harm and are usually forgiven easily if discovered because they help maintain social relationships.\n\n2. Self-Defense - Lying can be justified when it's necessary for self preservation or the safety of others in dangerous situations (e.g., feigning a disability during an emergency evacuation). This is often seen as ethically permissible, given that these lies are not deceitful but instead aim to protect oneself and others from harm.\n\n3. Social Harmony - Some argue lying can help maintain social cohesion by smoothing over disagreements or preventing conflicts (e.g., avoid saying hurtful things). However, this is a contentious area because it could potentially undermine trust if frequently done in an untruthful manner.\n\n4. Professional Settings - Occasionally, lies are told for professional purposes to maintain competitiveness but these should always be carefully considered as they can erode reputation and respect over time. \n\n5. Legal Concealment (Lawful Lying) \u2013 In certain legal scenarios such as under oath in court or during an interrogation, it's a crime to lie intentionally which reflects societal emphasis on honesty even when facing difficult situations. However, some argue that the justice system allows for exceptions where withholding information is required (e.g., protection of minors).\n\nUltimately, whether lying can ever be okay depends heavily upon one's moral compass and how they balance truth against potential harm or discomfort their honesty may cause in specific situations."
+  },
+  {
+    "task": "Ethical Reasoning & Nuance",
+    "model": "phi3:mini",
+    "strategy": "chain_of_thought",
+    "prompt": "Is it ever okay to lie?\n\nLet's think step by step before answering.",
+    "response": "The question of whether lying is ever acceptable can be complex, as moral and ethical considerations vary among individuals and cultures. Here are some factors we might examine:\n\n1. **Consequences** - Consider the potential outcomes that a lie could cause. If telling the truth would result in harm or unnecessary suffering to someone without any significant benefit from lying (either for oneself or others), many ethical frameworks, like utilitarianism and consequentialism, might justify the lie as it maximizes overall happiness and well-being.\n   Example: You tell your friend a white lie when they ask if you liked their gift because doing so avoids hurting their feelings without causing significant harm or inconvenience to anyone else involved. \n\n2. **Intent** - Reflect on the reason behind lying. If an individual's intent is not malicious, and lies are made with goodwill in mind (such as sparing someone from temporary embarrassment), some may argue that it could be seen more ethically permissible than a lie told out of self-interest or to cause harm.\n   Example: A person tells their child's teacher about the missing school supplies not because they want revenge but rather due to concern for the child and understanding the importance of responsibility, even if it means admitting fault on behalf of the child as well. \n\n3. **Context** - The circumstances surrounding a situation can also influence whether lying might be justifiable or necessary. Some ethical theories prioritize context in moral judgment; this approach is sometimes called virtue ethics and focuses more on character development, wisdom, courage, empathy etc., than the act itself (lie/truth).\n   Example: In a life-or-death situation where lying could save someone's life without causing significant harm or deceit elsewhere. \n\n4. **Cultural and individual perspectives** - Not all cultures value honesty above everything else, sometimes valuing group cohesion more than personal integrity (as seen in some Eastern collectivist societies). Additionally, an honest person's perspective might also differ from that of another who is generally less truthful.\n   Example: Different family traditions about how much to share with extended relatives or strangers can impact one\u2019s comfort level around honesty without causing harm \u2013 like sharing a bit too many details about vacation plans for the sake of fostering goodwill and anticipation among loved ones, knowing they won't cause serious inconvenience. \n\nIn summary, while absolute honesty is often encouraged as an ideal virtue across various ethical perspectives (like Kantianism), some argue that it can be acceptable to lie under certain circumstances \u2013 such as when the intention behind lies leads to greater overall happiness or welfare without significant harm done. These situations are generally rare, and we must carefully consider our motives before deciding whether a lie is justified in any given circumstance."
+  },
+  {
+    "task": "Ethical Reasoning & Nuance",
+    "model": "qwen2:7b",
+    "strategy": "zero_shot",
+    "prompt": "Is it ever okay to lie?",
+    "response": "Deciding whether lying is ever justified can depend on the specific context, severity of the situation, and ethical principles involved. In some circumstances, telling a \"white lie\" might be considered acceptable:\n\n1. **Protecting Someone's Feelings:** Sometimes telling a small lie may prevent causing unnecessary emotional distress to someone else. For example, saying that you like their cooking when it isn't your taste can protect their feelings.\n\n2. **Avoiding Harm:** If lying could potentially prevent physical or psychological harm to another person, some argue this constitutes an exception to the rule against lying. For instance, not revealing a serious illness of a close friend might be considered justifiable if the truth would cause them extreme anxiety and make it worse.\n\n3. **Legal Obligations:** In situations where legal protection necessitates telling a lie, such as in self-defense scenarios, some may argue that lying to save oneself from harm is acceptable.\n\n4. **Professional Integrity:** Certain professions might require white lies for ethical reasons, such as doctors not disclosing the full severity of a diagnosis if they believe it would lead to hopelessness or despair instead of action.\n\n5. **Privacy:** In situations where honesty about sensitive personal information could potentially result in misuse of that information against oneself or others, lying may be justified.\n\nIt's important to note that these exceptions are often debated and can vary based on individual moral beliefs and cultural contexts. There is also a distinction between \"white lies,\" which aim to protect feelings or avoid harm, and more serious forms of deception that might not fall under the same ethical consideration. In general, honesty tends to be favored in most social interactions as it fosters trust and integrity.\n\nThe key question often comes down to assessing whether the consequences of telling a lie outweigh the benefits, considering both short-term and long-term impacts on relationships and personal ethics."
+  },
+  {
+    "task": "Ethical Reasoning & Nuance",
+    "model": "qwen2:7b",
+    "strategy": "few_shot",
+    "prompt": "Example:\nShould a self-driving car prioritize the lives of its passengers or pedestrians in an unavoidable accident?\nResponse:\nThis is a classic ethical dilemma with no easy answer. Utilitarianism might suggest minimizing overall harm, which could mean sacrificing the passenger for multiple pedestrians. Deontology, on the other hand, might argue for a strict rule, such as protecting the car's occupants at all costs. The 'right' answer depends on the ethical framework one subscribes to.\n\nExample:\nIs it ethical to use animals for scientific research?\nResponse:\nThis is a contentious issue. Proponents argue that it is a necessary evil to advance medicine and save human lives. Opponents argue that it is cruel and that alternative methods should be used. There is a spectrum of views, with some accepting it only for critical medical research and others rejecting it entirely.\n\nNow solve this:\nIs it ever okay to lie?",
+    "response": "The question of whether lying is ever acceptable can be quite nuanced and depends largely on the context and the ethical implications involved. \n\nUtilitarianism might suggest that lying can sometimes produce a better overall outcome by preventing harm or achieving other significant positive outcomes for more people than would result from telling the truth.\n\nFor example, if someone were about to do something dangerous without realizing it could be risky, telling them the truth might prevent their injury or save their life. In this case, the lie served as an action that had potentially positive consequences and can be seen as justifiable under utilitarian principles.\n\nOn the other hand, Kantian ethics generally argues that lying is inherently wrong because honesty is a foundational principle of moral integrity. According to this view, there are certain ethical rules that should never be broken, regardless of their outcome.\n\nMoreover, from a virtue ethics perspective, which focuses on character and virtues rather than on consequences or rules, lying undermines trust and can harm relationships over time. Lying does not fulfill the human virtue of honesty and integrity.\n\nIn summary, whether it is ever okay to lie depends on one's ethical framework and the specific circumstances involved. Generally, lying is considered unacceptable in most moral philosophies because it breaches fundamental principles like truthfulness or respect for others' autonomy."
+  }
+]
